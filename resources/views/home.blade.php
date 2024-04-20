@@ -15,7 +15,7 @@
                             <span>{{ $comic['series'] }}</span>
                         </div>
                     </div>
-                @endforeach
+                @endforeachm
             </div>
 
             <button>LOAD MORE</button>

@@ -4,7 +4,7 @@
     <nav>
         <a href="/">CHARACTERS</a>
 
-        <a href="{{ route('comics') }}" class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}">COMICS</a>
+        <a href="{{ route('home') }}" class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}">COMICS</a>
         <!--class, se mi restituisce l'estringa 'products' allora vuol dire che la route ativa é questa e la voglio attivare-->
         <!-- se "Route::currentRouteName()" mi restituisce una sringa con il nome della Route che in questo caso é comics (questa Route é in web.php)-->
 
