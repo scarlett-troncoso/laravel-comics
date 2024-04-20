@@ -1,3 +1,98 @@
-body {
-    background: plum;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+:root{
+    --mol-lighter: white;
+    --mod-primary: #b3e5fc;
+}
+
+body {
+    font-family: 'Poopins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 70%;
+    max-width:  1176px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+    padding: 1rem;
+}
+
+/* #endregion Common */
+
+
+/* #region Header */
+header {
+    text-align: center;
+    background-color: var(--mol-lighter);
+    
+    nav {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+
+        & a {
+            padding: 0.5rem;
+            text-decoration: none;
+            font-weight: 400;
+
+            &.active {
+                background-color: var(--mod-primary);
+            }
+        }
+    }
+}
+
+/* #endregion Header */
+
+/* #region Main */
+main {
+    min-height: 60vh;
+    background-image: url('../images/fondo-pag-speciali.jpg');
+
+   & #pasta{
+    & h1 {
+        padding: 1rem;
+    }
+        .card{
+            background-color: var(--mool-lighter);
+            text-align: center;
+            font-weight: 400;
+        }
+    }
+
+}
+/* #endregion Main */
+
+
+/* #region Main */
+
+footer {
+    background-image: url('../images/footer-montagne-bottom.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    ul {
+        list-style: none;
+        & a{
+            text-decoration: none;
+        }
+    }
+}
+
+/* #endregion Main */
