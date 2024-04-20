@@ -28,10 +28,6 @@ Route::get('/', function () {
     return view('home', compact('comics'));
 })->name('home');
 
-Route::get('/comics', function () {
-    return view('guests.comics'); // guest é una sottocartella per quello dobbiamo inserirla prima di contacts altrimente non si trovera il file 'welcome', se fosse sólo dentro la cartell 'views' allora non ci sarebbe bisogno del guest
-})->name('comics');
-
 Route::get('/movies', function () {
     return view('guests.movies'); // guest é una sottocartella per quello dobbiamo inserirla prima di contacts altrimente non si trovera il file 'welcome', se fosse sólo dentro la cartell 'views' allora non ci sarebbe bisogno del guest
 })->name('movies');
