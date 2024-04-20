@@ -5,7 +5,7 @@
 
         <div class="jumbotron"> </div>
 
-        <div class="container">
+        <div class="container cont-comics">
             <!-- copertine dei comics -->
             <div class="row">
                 @foreach ($comics as $comic)
@@ -15,10 +15,12 @@
                             <span>{{ $comic['series'] }}</span>
                         </div>
                     </div>
-                @endforeachm
+                @endforeach
             </div>
 
-            <button>LOAD MORE</button>
+            <div class="btn">
+                <button>LOAD MORE</button>
+            </div>
 
         </div>
     </section>
@@ -30,8 +32,6 @@
                     <a href="/">DIGITAL COMICS</a>
 
                     <a href="/">DC MERCHANDISE</a>
-                    <!--class, se mi restituisce l'estringa 'products' allora vuol dire che la route ativa é questa e la voglio attivare-->
-                    <!-- se "Route::currentRouteName()" mi restituisce una sringa con il nome della Route che in questo caso é comics (questa Route é in web.php)-->
 
                     <a href="">SUBSCRIPTION</a>
 
