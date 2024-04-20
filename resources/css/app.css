@@ -6,11 +6,12 @@
 
 :root{
     --mol-lighter: white;
-    --mod-primary: #b3e5fc;
+    --mod-primary: #0589f4;
+    --dark-main: rgb(24, 24, 24);
 }
 
 body {
-    font-family: 'Poopins', sans-serif;
+    font-family: sans-serif;
 }
 
 img {
@@ -29,9 +30,18 @@ img {
     margin: 0 -1rem;
 }
 
-.col-4 {
-    width: calc(100% / 12 * 4);
+.col-2 {
+    width: calc(100% / 12 * 2);
     padding: 1rem;
+}
+
+.card{
+    background-color: var(--mool-lighter);
+    text-align: center;
+
+    & img {
+        aspect-ratio: 1;
+    }
 }
 
 /* #endregion Common */
@@ -53,7 +63,7 @@ header {
             font-weight: 400;
 
             &.active {
-                background-color: var(--mod-primary);
+                color: var(--mod-primary);
             }
         }
     }
@@ -64,20 +74,25 @@ header {
 /* #region Main */
 main {
     min-height: 60vh;
-    background-image: url('../images/fondo-pag-speciali.jpg');
-
-   & #pasta{
-    & h1 {
-        padding: 1rem;
-    }
-        .card{
-            background-color: var(--mool-lighter);
-            text-align: center;
-            font-weight: 400;
-        }
-    }
-
+    background-color: var(--dark-main);
+    color: var(--mol-lighter);
 }
+
+#comics {
+    & .jumbotron {
+        background-image: url('../images/jumbotron.jpg');
+        height: 300px;
+    }
+}
+
+#menu-main {
+    & .nav-main {
+        background-color: var(--mod-primary);
+        height: 50px;
+    
+    }
+}
+
 /* #endregion Main */
 
 
