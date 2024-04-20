@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* #region Common */
 :root{
     --mol-lighter: white;
     --mod-primary: #0589f4;
@@ -51,22 +52,43 @@ img {
 header {
     text-align: center;
     background-color: var(--mol-lighter);
-    
-    nav {
+
+    & .cont-header {
         display: flex;
-        gap: 0.5rem;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
 
-        & a {
-            padding: 0.5rem;
-            text-decoration: none;
-            font-weight: 400;
+        & .cont-img {
+            width: 50px;
+        }
 
-            &.active {
-                color: var(--mod-primary);
+        & nav {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+    
+            & a {
+                text-decoration: none;
+                font-size: x-small;
+                font-weight: bold;
+    
+                &.active {
+                    color: var(--mod-primary);
+                }
             }
         }
+
+        & #search {
+            width: 80px;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 3px solid var(--mod-primary);
+        }
+
     }
+    
+    
 }
 
 /* #endregion Header */
@@ -82,6 +104,24 @@ main {
     & .jumbotron {
         background-image: url('../images/jumbotron.jpg');
         height: 300px;
+    }
+
+    & .cont-comics {
+        & .btn{
+            margin: auto;
+
+            & button {
+                padding: 0 1rem 0 1rem;
+                color: var(--mol-lighter);
+                font-size: x-small;
+                font-weight: bold;
+                height: 25px;
+                background-color: var(--mod-primary);
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        
     }
 }
 
